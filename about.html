@@ -8,79 +8,98 @@
 
 <body>
 
-    <nav>
-        <strong>About Me</strong> |
-        <a href="index.html">Home</a>
-    </nav>
+    <!-- Header and main navigation -->
+    <header>
+        <!-- Semantic nav element -->
+        <nav>
+            <strong>About Me</strong> |
+            <!-- Internal link to home page -->
+            <a href="index.html">Home</a>
+        </nav>
 
-    <h1>About Me</h1>
+        <h1>About Me</h1>
+    </header>
 
-    <h2 id="hobbies">My Hobbies</h2>
+    <!-- Main content container -->
+    <main>
+        <!-- Hobbies section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
 
-    <ul>
-
-        <li>
-            Dancing
-            <ol>
+            <ul>
                 <li>
-                    Ballet
+                    Dancing
+                    <ol>
+                        <li>
+                            Ballet
+                            <br>
+                            <!-- Video element -->
+                            <video src="Alexa-Ballet.mp4" width="320" height="240" controls></video>
+                        </li>
+
+                        <li>
+                            Jazz/Contemporary
+                            <br>
+                            <video src="Alexa-Contemporary.mp4" width="320" height="240" controls></video>
+                        </li>
+
+                        <li>
+                            Hip-hop/Street
+                            <br>
+                            <video src="Alexa-Street.mp4" width="320" height="240" controls></video>
+                        </li>
+
+                        <li>
+                            Dancesport/Ballroom
+                            <br>
+                            <video src="Alexa-Ballroom.mp4" width="320" height="240" controls></video>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    Memorizing
                     <br>
-                    <video src="Alexa-Ballet.mp4" width="320" height="240" controls></video>
-                </li>
-
-                <li>
-                    Jazz/Contemporary
+                    <!-- Image element -->
+                    <img src="Alexa-Memory.jpg" alt="Alexa Canaria" width="400" height="300">
                     <br>
-                    <video src="Alexa-Contemporary.mp4" width="320" height="240" controls></video>
+                    <!-- External link -->
+                    <a href="https://iam-stats.org/competitor.php?id=14769" target="_blank">
+                        Click here to see my memory stats
+                    </a>
                 </li>
 
                 <li>
-                    Hip-hop/Street
-                    <br>
-                    <video src="Alexa-Street.mp4" width="320" height="240" controls></video>
+                    Listening to Music
+                    <ol>
+                        <li>
+                            My Top 2 OPM Songs
+                            <p><strong>Sundo</strong> by Imago</p>
+                            <!-- Audio element -->
+                            <audio src="Alexa-OPM.mp3" controls></audio>
+
+                            <p><strong>Cool Off</strong> by Yeng Constantino</p>
+                            <audio src="Alexa-OPM2.mp3" controls></audio>
+                        </li>
+                    </ol>
                 </li>
 
                 <li>
-                    Dancesport/Ballroom
-                    <br>
-                    <video src="Alexa-Ballroom.mp4" width="320" height="240" controls></video>
+                    Graphic Designing
+                    <p>Here is a sample of my favorite graphic design work!</p>
+                    <img src="Alexa-Graphic.jpg" alt="Alexa Canaria" width="300" height="400">
                 </li>
-            </ol>
-        </li>
+            </ul>
+        </section>
+    </main>
 
-        <li>
-            Memorizing
-            <br>
-            <img src="Alexa-Memory.jpg" alt="Alexa Canaria" width="400" height="300">
-            <br>
-            <a href="https://iam-stats.org/competitor.php?id=14769" target="_blank">
-                Click here to see my memory stats
-            </a>
-        </li>
-
-        <li>
-            Listening to Music
-            <ol>
-                <li>
-                    My Top 2 OPM Songs
-                    <p><strong>Sundo</strong> by Imago</p>
-                    <audio src="Alexa-OPM.mp3" controls></audio>
-
-                    <p><strong>Cool Off</strong> by Yeng Constantino</p>
-                    <audio src="Alexa-OPM2.mp3" controls></audio>
-                </li>
-            </ol>
-        </li>
-
-        <li>
-            Graphic Designing
-            <p>Here is a sample of my favorite graphic design work!</p>
-            <img src="Alexa-Graphic.jpg" alt="Alexa Canaria" width="300" height="400">
-        </li>
-
-    </ul>
-
-    <a href="index.html#Quiz">Back to Quiz</a>
+    <!-- Footer element -->
+    <footer>
+        <hr>
+        <!-- Anchor link within page / jumping to specific section in index.html -->
+        <a href="index.html#Quiz">Back to Quiz</a>
+    </footer>
 
 </body>
+
 </html>

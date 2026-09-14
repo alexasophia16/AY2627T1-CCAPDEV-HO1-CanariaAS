@@ -8,128 +8,160 @@
 
 <body>
 
-    <nav>
-        <strong>Home</strong> |
-        <a href="about.html">About Me</a>
-    </nav>
+    <!-- Header and main navigation -->
+    <header>
+        <!-- Semantic nav element -->
+        <nav>
+            <strong>Home</strong> |
+            <!-- Internal link to another created page -->
+            <a href="about.html">About Me</a>
+        </nav>
 
-    <hr>
+        <hr>
 
-    <h1>Get To Know Me!</h1>
+        <h1>Get To Know Me!</h1>
+    </header>
 
-    <h2>
-        Alexa Sophia Canaria
-        <br>
-        <em>BS Computer Science in Software Technology</em>
-    </h2>
+    <!-- Main content container -->
+    <main>
 
-    <img src="Alexa.jpg" alt="Alexa Canaria" width="300" height="400">
+        <!-- Profile introduction section -->
+        <section>
+            <h2>
+                Alexa Sophia Canaria
+                <br>
+                <em>BS Computer Science in Software Technology</em>
+            </h2>
 
-    <p>
-        Hi! My name is Alexa Canaria. I am a student of BS Computer Science
-        in Software Technology from De La Salle University.
-    </p>
+            <!-- Image element -->
+            <img src="Alexa.jpg" alt="Alexa Canaria" width="300" height="400">
 
-    <hr>
+            <p>
+                Hi! My name is Alexa Canaria. I am a student of BS Computer Science
+                in Software Technology from De La Salle University.
+            </p>
+        </section>
 
-    <h2 id="profile">My Profile Details</h2>
+        <hr>
 
-    <table border="1">
-        <tr>
-            <th>Profile</th>
-            <th>Details</th>
-        </tr>
+        <!-- Profile table section -->
+        <section id="profile">
+            <h2>My Profile Details</h2>
 
-        <tr>
-            <td>Full Name</td>
-            <td>Alexa Sophia Canaria</td>
-        </tr>
+            <!-- Table element -->
+            <table border="1">
+                <tr>
+                    <th>Profile</th>
+                    <th>Details</th>
+                </tr>
 
-        <tr>
-            <td>Age</td>
-            <td>20</td>
-        </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Alexa Sophia Canaria</td>
+                </tr>
 
-        <tr>
-            <td>Email</td>
-            <td>alexa_sophia_canaria@dlsu.edu.ph</td>
-        </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                </tr>
 
-        <tr>
-            <td>GitHub</td>
-            <td>
-                <a href="https://github.com/alexasophia16" target="_blank">
-                    https://github.com/alexasophia16
-                </a>
-            </td>
-        </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>alexa_sophia_canaria@dlsu.edu.ph</td>
+                </tr>
 
-        <tr>
-            <td>LinkedIn</td>
-            <td>
-                <a href="https://www.linkedin.com/in/alexa-sophia-canaria-693a612a1/" target="_blank">
-                    https://www.linkedin.com/in/alexa-sophia-canaria-693a612a1/
-                </a>
-            </td>
-        </tr>
-    </table>
+                <tr>
+                    <td>GitHub</td>
+                    <td>
+                        <!-- External link -->
+                        <a href="https://github.com/alexasophia16" target="_blank">
+                            https://github.com/alexasophia16
+                        </a>
+                    </td>
+                </tr>
 
-    <hr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td>
+                        <!-- External link -->
+                        <a href="https://www.linkedin.com/in/alexa-sophia-canaria-693a612a1/" target="_blank">
+                            https://www.linkedin.com/in/alexa-sophia-canaria-693a612a1/
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-    <h2 id="Quiz">Get To Know Me Quiz</h2>
-    <a href="about.html">Read first before answering!</a>
+        <hr>
 
-    <br><br>
+        <!-- Quiz form section -->
+        <section id="Quiz">
+            <h2>Get To Know Me Quiz</h2>
+            <a href="about.html">Read first before answering!</a>
 
-    <form>
+            <br><br>
 
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name">
+            <!-- Form with different input types -->
+            <form>
+                <!-- Text input -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
 
-        <br><br>
+                <br><br>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email">
+                <!-- Email input -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
 
-        <br><br>
+                <br><br>
 
-        <p>Which hobby do you think I enjoy the most?</p>
+                <p>Which hobby do you think I enjoy the most?</p>
 
-        <input type="radio" id="dancing" name="hobby" value="dancing">
-        <label for="dancing">Dancing</label>
+                <!-- Radio inputs -->
+                <input type="radio" id="dancing" name="hobby" value="dancing">
+                <label for="dancing">Dancing</label>
 
-        <input type="radio" id="memorizing" name="hobby" value="memorizing">
-        <label for="memorizing">Memorizing</label>
+                <input type="radio" id="memorizing" name="hobby" value="memorizing">
+                <label for="memorizing">Memorizing</label>
 
-        <input type="radio" id="music" name="hobby" value="music">
-        <label for="music">Listening to Music</label>
+                <input type="radio" id="music" name="hobby" value="music">
+                <label for="music">Listening to Music</label>
 
-        <input type="radio" id="designing" name="hobby" value="designing">
-        <label for="designing">Graphic Designing</label>
+                <input type="radio" id="designing" name="hobby" value="designing">
+                <label for="designing">Graphic Designing</label>
 
-        <br><br>
+                <br><br>
 
-        <label for="dance">Which dance style interests you the most?</label>
-        <select id="dance" name="dance">
-            <option value="ballet">Ballet</option>
-            <option value="jazz">Jazz/Contemporary</option>
-            <option value="hiphop">Hip-hop/Street</option>
-            <option value="ballroom">Dancesport/Ballroom</option>
-        </select>
+                <!-- Select input -->
+                <label for="dance">Which dance style interests you the most?</label>
+                <select id="dance" name="dance">
+                    <option value="ballet">Ballet</option>
+                    <option value="jazz">Jazz/Contemporary</option>
+                    <option value="hiphop">Hip-hop/Street</option>
+                    <option value="ballroom">Dancesport/Ballroom</option>
+                </select>
 
-        <br><br>
+                <br><br>
 
-        <label for="question">What would you like to know about me?</label>
-        <br>
-        <textarea id="question" name="question" rows="4" cols="40"></textarea>
+                <!-- Textarea input -->
+                <label for="question">What would you like to know about me?</label>
+                <br>
+                <textarea id="question" name="question" rows="4" cols="40"></textarea>
 
-        <br><br>
+                <br><br>
 
-        <input type="submit" value="Submit">
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
 
-    </form>
+    </main>
 
-    <hr>
+    <!-- Footer element -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Alexa Sophia Canaria. All rights reserved.</p>
+    </footer>
 
 </body>
 
