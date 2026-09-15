@@ -8,19 +8,35 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #333;
+    background-color: #eee1e7;
 }
 
 a {
     text-decoration: none;
 }
 
+/* Page header */
+header {
+    background-color: #f3dee9;
+    padding: 18px 60px;
+    border-bottom: 1px solid #f6d9ea;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ed3a99;
+}
+
 /* Hero section */
 .hero-section {
     background-image: linear-gradient(to right,
-            rgba(244, 244, 247, 0.97) 0%,
-            rgba(244, 244, 247, 0.9) 35%,
-            rgba(244, 244, 247, 0.35) 65%,
-            rgba(244, 244, 247, 0) 90%),
+            rgba(253, 240, 246, 0.97) 0%,
+            rgba(253, 240, 246, 0.9) 35%,
+            rgba(253, 240, 246, 0.35) 65%,
+            rgba(253, 240, 246, 0) 90%),
         url('Alexa-1.jpg');
     background-size: cover;
     background-position: right center;
@@ -107,4 +123,191 @@ a {
     background-color: #ed3a99;
     border-color: #bd0969;
     transform: translateY(-2px);
+}
+
+/* Profile section */
+#profile {
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 0 60px;
+}
+
+#profile h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+#profile table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+#profile th,
+#profile td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#profile th {
+    background-color: #ed3a99;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#profile tr:nth-child(even) {
+    background-color: #fdf0f6;
+}
+
+#profile tr:last-child td {
+    border-bottom: none;
+}
+
+#profile tr:hover td {
+    background-color: #fce4f0;
+}
+
+#profile td a {
+    color: #ed3a99;
+    font-weight: 500;
+}
+
+#profile td a:hover {
+    text-decoration: underline;
+}
+
+/* Quiz Section */
+#Quiz {
+    max-width: 700px;
+    margin: 70px auto 90px;
+    padding: 0 60px;
+}
+
+#Quiz h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#Quiz > a {
+    display: block;
+    text-align: center;
+    color: #ed3a99;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#Quiz > a:hover {
+    text-decoration: underline;
+}
+
+#Quiz form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+#Quiz label {
+    display: block;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+#Quiz p {
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+#Quiz input[type="text"],
+#Quiz input[type="email"],
+#Quiz select,
+#Quiz textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#Quiz input[type="text"]:focus,
+#Quiz input[type="email"]:focus,
+#Quiz select:focus,
+#Quiz textarea:focus {
+    outline: none;
+    border-color: #ed3a99;
+    box-shadow: 0 0 0 3px rgba(237, 58, 153, 0.15);
+}
+
+#Quiz textarea {
+    resize: vertical;
+}
+
+/* Radio buttons */
+#Quiz input[type="radio"] {
+    accent-color: #ed3a99;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#Quiz input[type="radio"] + label {
+    display: inline;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+/* Submit button */
+#Quiz input[type="submit"] {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: #ed3a99;
+    color: #fff;
+    border: 2px solid #ed3a99;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+#Quiz input[type="submit"]:hover {
+    background-color: #bd0969;
+    border-color: #bd0969;
+    transform: translateY(-2px);
+}
+
+/* Page footer */
+footer {
+    background-color: #fff5fa;
+    padding: 30px 60px;
+    text-align: center;
+    border-top: 1px solid #f6d9ea;
+}
+
+footer hr {
+    border: none;
+    display: none;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #888;
 }
