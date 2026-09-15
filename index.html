@@ -4,21 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Alexa Canaria</title>
+    <link href='style.css' rel='stylesheet'>
 </head>
 
 <body>
 
     <!-- Header and main navigation -->
     <header>
-        <!-- Semantic nav element -->
-        <nav>
-            <strong>Home</strong> |
-            <!-- Internal link to another created page -->
-            <a href="about.html">About Me</a>
-        </nav>
-
-        <hr>
-
         <h1>Get To Know Me!</h1>
     </header>
 
@@ -26,20 +18,20 @@
     <main>
 
         <!-- Profile introduction section -->
-        <section>
-            <h2>
-                Alexa Sophia Canaria
-                <br>
-                <em>BS Computer Science in Software Technology</em>
-            </h2>
+        <section class="hero-section">
+            <!-- Nav stays at top inside hero-section -->
+            <nav class="hero-nav">
+                <a href="index.html" class="logo">Home</a>
+                <a href="about.html">About Me</a>
+            </nav>
 
-            <!-- Image element -->
-            <img src="Alexa.jpg" alt="Alexa Canaria" width="300" height="400">
-
-            <p>
-                Hi! My name is Alexa Canaria. I am a student of BS Computer Science
-                in Software Technology from De La Salle University.
-            </p>
+            <!-- Content sits separately below -->
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Alexa Sophia Canaria</span></h1>
+                <h2>BS Computer Science in Software Technology</h2>
+                <p>I am a student of BS Computer Science in Software Technology from De La Salle University.</p>
+                <a href="about.html" class="btn btn-primary">My Hobbies</a>
+            </div>
         </section>
 
         <hr>
